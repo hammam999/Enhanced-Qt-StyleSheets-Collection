@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Light Theme Gradients -->
+    <linearGradient id="lightBackground" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f8fafc;stop-opacity:1">
+        <animate attributeName="stop-color" values="#f8fafc;#ffffff;#f1f5f9;#f8fafc" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#e2e8f0;stop-opacity:1">
+        <animate attributeName="stop-color" values="#e2e8f0;#f1f5f9;#cbd5e1;#e2e8f0" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#cbd5e1;stop-opacity:1">
+        <animate attributeName="stop-color" values="#cbd5e1;#94a3b8;#e2e8f0;#cbd5e1" dur="8s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+
+    <!-- Light Accent Colors -->
+    <linearGradient id="accentBlueLt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="accentPurpleLt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1"/>
+    </linearGradient>
+
+    <linearGradient id="accentGreenLt" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1"/>
+    </linearGradient>
+
+    <!-- Light Theme Filters -->
+    <filter id="lightGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="lightShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#64748b" flood-opacity="0.1"/>
+    </filter>
+
+    <!-- Light Grid Pattern -->
+    <pattern id="lightGrid" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(100,116,139,0.08)" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Light Background with Grid -->
+  <rect width="1200" height="300" rx="20" ry="20" fill="url(#lightBackground)"/>
+  <rect width="1200" height="300" rx="20" ry="20" fill="url(#lightGrid)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -10,-10; 0,0" dur="12s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- Main Content Container -->
+  <g transform="translate(30, 70)">
+    
+    <!-- Qt Icon - Light Theme -->
+    <g transform="translate(0, 20)">
+      <rect x="0" y="0" width="50" height="50" rx="12" fill="url(#accentBlueLt)" filter="url(#lightShadow)"/>
+      <text x="25" y="35" text-anchor="middle" fill="white" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="700">Qt</text>
+    </g>
+    
+    <!-- Animated Main Title -->
+    <text x="70" y="45" fill="#1e293b" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="36" font-weight="800" letter-spacing="-0.02em" opacity="0">
+      Enhanced Qt StyleSheets
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="0.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,20; 0,0" dur="2s" begin="0.5s" fill="freeze"/>
+    </text>
+    
+    <!-- Animated Subtitle -->
+    <text x="70" y="70" fill="#475569" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="16" font-weight="500" opacity="0">
+      Modern, Beautiful &amp; Professional Qt Themes
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="1s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,15; 0,0" dur="2s" begin="1s" fill="freeze"/>
+    </text>
+
+    <!-- Feature Tags with Light Colors -->
+    <g transform="translate(70, 85)" opacity="0">
+      <rect x="0" y="0" width="85" height="28" rx="14" fill="url(#accentBlueLt)" opacity="0.9"/>
+      <text x="42.5" y="19" text-anchor="middle" fill="white" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="600">12 Themes</text>
+      
+      <rect x="95" y="0" width="75" height="28" rx="14" fill="url(#accentPurpleLt)" opacity="0.9"/>
+      <text x="132.5" y="19" text-anchor="middle" fill="white" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="600">Modern UI</text>
+      
+      <rect x="180" y="0" width="85" height="28" rx="14" fill="url(#accentGreenLt)" opacity="0.9"/>
+      <text x="222.5" y="19" text-anchor="middle" fill="white" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="600">Easy Setup</text>
+      
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="1.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,10; 0,0" dur="2s" begin="1.5s" fill="freeze"/>
+    </g>
+  </g>
+
+  <!-- Theme Preview Cards - Light Version -->
+  <g transform="translate(700, 60)" opacity="0">
+    <!-- Aqua Theme Card -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="120" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#lightShadow)">
+        <animate attributeName="transform" values="translate(0,0); translate(0,-3); translate(0,0)" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="8" y="8" width="104" height="12" rx="6" fill="#06b6d4"/>
+      <rect x="8" y="28" width="80" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="44" width="60" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="60" width="40" height="8" rx="4" fill="#06b6d4" opacity="0.6"/>
+      <text x="60" y="100" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Aqua</text>
+    </g>
+
+    <!-- macOS Theme Card -->
+    <g transform="translate(140, 0)">
+      <rect x="0" y="0" width="120" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#lightShadow)">
+        <animate attributeName="transform" values="translate(0,0); translate(0,-3); translate(0,0)" dur="4s" begin="0.5s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="8" y="8" width="104" height="12" rx="6" fill="#3b82f6"/>
+      <rect x="8" y="28" width="80" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="44" width="60" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="60" width="40" height="8" rx="4" fill="#3b82f6" opacity="0.6"/>
+      <text x="60" y="100" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="600">macOS</text>
+    </g>
+
+    <!-- Ubuntu Theme Card -->
+    <g transform="translate(260, 0)">
+      <rect x="0" y="0" width="110" height="80" rx="12" fill="#ffffff" stroke="#e2e8f0" stroke-width="2" filter="url(#lightShadow)">
+        <animate attributeName="transform" values="translate(0,0); translate(0,-3); translate(0,0)" dur="4s" begin="1s" repeatCount="indefinite"/>
+      </rect>
+      <rect x="8" y="8" width="94" height="12" rx="6" fill="#f97316"/>
+      <rect x="8" y="28" width="70" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="44" width="50" height="8" rx="4" fill="#e2e8f0"/>
+      <rect x="8" y="60" width="35" height="8" rx="4" fill="#f97316" opacity="0.6"/>
+      <text x="55" y="100" text-anchor="middle" fill="#475569" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Ubuntu</text>
+    </g>
+
+    <animate attributeName="opacity" values="0;1" dur="2s" begin="2s" fill="freeze"/>
+    <animateTransform attributeName="transform" type="translate" values="700,80; 700,60" dur="2s" begin="2s" fill="freeze"/>
+  </g>
+
+  <!-- Floating Light Elements -->
+  <g opacity="0.4">
+    <!-- Light Circles -->
+    <circle cx="100" cy="50" r="3" fill="#3b82f6" opacity="0.3">
+      <animate attributeName="cy" values="50;30;50" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="6s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="200" cy="250" r="2" fill="#8b5cf6" opacity="0.4">
+      <animate attributeName="cy" values="250;230;250" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.4;0.7;0.4" dur="8s" repeatCount="indefinite"/>
+    </circle>
+    
+    <circle cx="1100" cy="80" r="4" fill="#10b981" opacity="0.2">
+      <animate attributeName="cy" values="80;60;80" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.2;0.5;0.2" dur="7s" repeatCount="indefinite"/>
+    </circle>
+
+    <!-- Light Geometric Shapes -->
+    <rect x="50" y="200" width="6" height="6" rx="1" fill="#f97316" opacity="0.3" transform="rotate(45 53 203)">
+      <animate attributeName="y" values="200;180;200" dur="9s" repeatCount="indefinite"/>
+      <animateTransform attributeName="transform" type="rotate" values="45 53 203;90 53 203;45 53 203" dur="9s" repeatCount="indefinite"/>
+    </rect>
+    
+    <polygon points="1050,200 1060,220 1040,220" fill="#ec4899" opacity="0.3">
+      <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="10s" repeatCount="indefinite"/>
+      <animate attributeName="opacity" values="0.3;0.6;0.3" dur="10s" repeatCount="indefinite"/>
+    </polygon>
+  </g>
+</svg>

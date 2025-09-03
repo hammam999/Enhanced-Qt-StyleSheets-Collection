@@ -1,0 +1,253 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Animated Gradient Background -->
+    <linearGradient id="modernBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f0f23;stop-opacity:1">
+        <animate attributeName="stop-color" values="#0f0f23;#1a1a2e;#0f0f23" dur="8s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="50%" style="stop-color:#1a1a2e;stop-opacity:1">
+        <animate attributeName="stop-color" values="#1a1a2e;#16213e;#1a1a2e" dur="6s" repeatCount="indefinite"/>
+      </stop>
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1">
+        <animate attributeName="stop-color" values="#16213e;#0f0f23;#16213e" dur="10s" repeatCount="indefinite"/>
+      </stop>
+    </linearGradient>
+    
+    <!-- Accent Gradients -->
+    <linearGradient id="accentBlue" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00d4ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0099cc;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentPurple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#a855f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Enhanced Glow Effects -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="textGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="pulseGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background with rounded corners -->
+  <rect width="1200" height="300" rx="20" ry="20" fill="url(#modernBg)"/>
+  
+  <!-- Floating Geometric Background Elements -->
+  <circle cx="1050" cy="80" r="120" fill="rgba(0, 212, 255, 0.03)" opacity="0.8">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,-20; 0,0" dur="6s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.8;0.4;0.8" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  <circle cx="150" cy="220" r="80" fill="rgba(168, 85, 247, 0.04)" opacity="0.6">
+    <animateTransform attributeName="transform" type="translate" values="0,0; 0,15; 0,0" dur="8s" repeatCount="indefinite"/>
+    <animate attributeName="opacity" values="0.6;0.3;0.6" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Grid Pattern -->
+  <defs>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="300" rx="20" ry="20" fill="url(#grid)">
+    <animateTransform attributeName="transform" type="translate" values="0,0; -10,-10; 0,0" dur="12s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Main Content Container - Moved to edge -->
+  <g transform="translate(5, 60)">
+    
+    <!-- Qt Icon - Modern Minimalist -->
+    <g transform="translate(0, 40)">
+      <rect x="0" y="0" width="60" height="60" rx="16" fill="url(#accentBlue)" filter="url(#glow)"/>
+      <text x="30" y="42" text-anchor="middle" fill="white" font-family="'SF Pro Display', 'Segoe UI', system-ui, sans-serif" font-size="22" font-weight="700">Qt</text>
+    </g>
+    
+    <!-- Animated Main Title -->
+    <text x="90" y="70" fill="white" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="48" font-weight="800" letter-spacing="-0.02em" opacity="0">
+      Enhanced Qt StyleSheets
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="0.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,20; 0,0" dur="2s" begin="0.5s" fill="freeze"/>
+    </text>
+    
+    <!-- Animated Subtitle -->
+    <text x="90" y="100" fill="rgba(255,255,255,0.7)" font-family="'SF Pro Display', 'Inter', 'Segoe UI', system-ui, sans-serif" font-size="18" font-weight="400" letter-spacing="0.01em" opacity="0">
+      Modern themes • SVG icons • Comprehensive widget coverage
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="1s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="0,20; 0,0" dur="2s" begin="1s" fill="freeze"/>
+    </text>
+    
+    <!-- Animated Feature Tags -->
+    <g transform="translate(90, 125)" opacity="0">
+      <animate attributeName="opacity" values="0;1" dur="2s" begin="1.5s" fill="freeze"/>
+      <animateTransform attributeName="transform" type="translate" values="90,145; 90,125" dur="2s" begin="1.5s" fill="freeze"/>
+      
+      <!-- Modern Design -->
+      <rect x="0" y="0" width="100" height="28" rx="14" fill="rgba(0, 212, 255, 0.15)" stroke="rgba(0, 212, 255, 0.3)" stroke-width="1">
+        <animate attributeName="fill" values="rgba(0, 212, 255, 0.15);rgba(0, 212, 255, 0.25);rgba(0, 212, 255, 0.15)" dur="4s" repeatCount="indefinite"/>
+      </rect>
+      <text x="50" y="19" text-anchor="middle" fill="#00d4ff" font-family="'SF Pro Display', system-ui, sans-serif" font-size="11" font-weight="600">
+        MODERN
+      </text>
+      
+      <!-- PyQt6 Ready -->
+      <rect x="115" y="0" width="90" height="28" rx="14" fill="rgba(168, 85, 247, 0.15)" stroke="rgba(168, 85, 247, 0.3)" stroke-width="1">
+        <animate attributeName="fill" values="rgba(168, 85, 247, 0.15);rgba(168, 85, 247, 0.25);rgba(168, 85, 247, 0.15)" dur="5s" repeatCount="indefinite"/>
+      </rect>
+      <text x="160" y="19" text-anchor="middle" fill="#a855f7" font-family="'SF Pro Display', system-ui, sans-serif" font-size="11" font-weight="600">
+        PYQT6
+      </text>
+      
+      <!-- Enhanced -->
+      <rect x="220" y="0" width="100" height="28" rx="14" fill="rgba(34, 197, 94, 0.15)" stroke="rgba(34, 197, 94, 0.3)" stroke-width="1">
+        <animate attributeName="fill" values="rgba(34, 197, 94, 0.15);rgba(34, 197, 94, 0.25);rgba(34, 197, 94, 0.15)" dur="6s" repeatCount="indefinite"/>
+      </rect>
+      <text x="270" y="19" text-anchor="middle" fill="#22c55e" font-family="'SF Pro Display', system-ui, sans-serif" font-size="11" font-weight="600">
+        ENHANCED
+      </text>
+    </g>
+    
+  </g>
+  
+  <!-- Right Side - Theme Preview -->
+  <g transform="translate(750, 60)">
+    
+    <!-- Theme Cards Container -->
+    <rect x="0" y="0" width="370" height="180" rx="20" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.08)" stroke-width="1"/>
+    
+    <!-- Theme Cards -->
+    <g transform="translate(20, 20)">
+      
+      <!-- Interactive Aqua Theme Card -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="100" height="70" rx="12" fill="rgba(0, 153, 204, 0.1)" stroke="rgba(0, 153, 204, 0.3)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-3; 0,0" dur="4s" repeatCount="indefinite"/>
+        </rect>
+        <text x="50" y="25" text-anchor="middle" fill="#0099cc" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="700">
+          Aqua
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'SF Pro Display', system-ui, sans-serif" font-size="9">
+          Enhanced
+        </text>
+        <!-- Animated Aqua accent line -->
+        <rect x="20" y="50" width="60" height="3" rx="1.5" fill="url(#accentBlue)">
+          <animate attributeName="width" values="60;80;60" dur="3s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      
+      <!-- Interactive MacOS Theme Card -->
+      <g transform="translate(115, 0)">
+        <rect x="0" y="0" width="100" height="70" rx="12" fill="rgba(0, 122, 255, 0.1)" stroke="rgba(0, 122, 255, 0.3)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="5s" repeatCount="indefinite"/>
+        </rect>
+        <text x="50" y="25" text-anchor="middle" fill="#007AFF" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="700">
+          macOS
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'SF Pro Display', system-ui, sans-serif" font-size="9">
+          Enhanced
+        </text>
+        <!-- Animated macOS traffic lights -->
+        <circle cx="25" cy="52" r="3" fill="#FF5F57">
+          <animate attributeName="opacity" values="1;0.5;1" dur="2s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="35" cy="52" r="3" fill="#FFBD2E">
+          <animate attributeName="opacity" values="1;0.5;1" dur="2.5s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="45" cy="52" r="3" fill="#28CA42">
+          <animate attributeName="opacity" values="1;0.5;1" dur="3s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      
+      <!-- Interactive Ubuntu Theme Card -->
+      <g transform="translate(230, 0)">
+        <rect x="0" y="0" width="100" height="70" rx="12" fill="rgba(233, 84, 32, 0.1)" stroke="rgba(233, 84, 32, 0.3)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-4; 0,0" dur="6s" repeatCount="indefinite"/>
+        </rect>
+        <text x="50" y="25" text-anchor="middle" fill="#E95420" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="700">
+          Ubuntu
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'SF Pro Display', system-ui, sans-serif" font-size="9">
+          Enhanced
+        </text>
+        <!-- Animated Ubuntu logo shape -->
+        <circle cx="50" cy="52" r="6" fill="none" stroke="#E95420" stroke-width="1.5">
+          <animateTransform attributeName="transform" type="rotate" values="0 50 52;360 50 52" dur="8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="50" cy="52" r="2" fill="#E95420">
+          <animate attributeName="r" values="2;3;2" dur="2s" repeatCount="indefinite"/>
+        </circle>
+      </g>
+      
+      <!-- Interactive Material Theme Card -->
+      <g transform="translate(57.5, 85)">
+        <rect x="0" y="0" width="100" height="70" rx="12" fill="rgba(25, 118, 210, 0.1)" stroke="rgba(25, 118, 210, 0.3)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-2; 0,0" dur="7s" repeatCount="indefinite"/>
+        </rect>
+        <text x="50" y="25" text-anchor="middle" fill="#1976D2" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="700">
+          Material
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'SF Pro Display', system-ui, sans-serif" font-size="9">
+          Dark Enhanced
+        </text>
+        <!-- Animated Material design element -->
+        <rect x="30" y="48" width="40" height="8" rx="4" fill="#1976D2">
+          <animate attributeName="width" values="40;50;40" dur="4s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      
+      <!-- Interactive AMOLED Theme Card -->
+      <g transform="translate(172.5, 85)">
+        <rect x="0" y="0" width="100" height="70" rx="12" fill="rgba(255,255,255,0.05)" stroke="rgba(255,255,255,0.2)" stroke-width="1">
+          <animateTransform attributeName="transform" type="translate" values="0,0; 0,-1; 0,0" dur="8s" repeatCount="indefinite"/>
+          <animate attributeName="fill" values="rgba(255,255,255,0.05);rgba(255,255,255,0.1);rgba(255,255,255,0.05)" dur="5s" repeatCount="indefinite"/>
+        </rect>
+        <text x="50" y="25" text-anchor="middle" fill="#ffffff" font-family="'SF Pro Display', system-ui, sans-serif" font-size="12" font-weight="700">
+          AMOLED
+        </text>
+        <text x="50" y="40" text-anchor="middle" fill="rgba(255,255,255,0.6)" font-family="'SF Pro Display', system-ui, sans-serif" font-size="9">
+          Pure Black
+        </text>
+        <!-- Animated AMOLED indicator -->
+        <rect x="35" y="48" width="30" height="8" rx="4" fill="#000000" stroke="rgba(255,255,255,0.3)" stroke-width="1">
+          <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="3s" repeatCount="indefinite"/>
+        </rect>
+      </g>
+      
+    </g>
+    
+  </g>
+  
+  <!-- Version Badge -->
+  <g transform="translate(1050, 20)">
+    <rect x="0" y="0" width="60" height="24" rx="12" fill="rgba(34, 197, 94, 0.2)" stroke="rgba(34, 197, 94, 0.4)" stroke-width="1"/>
+    <text x="30" y="16" text-anchor="middle" fill="#22c55e" font-family="'SF Pro Display', system-ui, sans-serif" font-size="11" font-weight="700">
+      v2.0
+    </text>
+  </g>
+  
+  <!-- Decorative Elements -->
+  <g opacity="0.3">
+    <path d="M 50 250 Q 200 200 350 250" stroke="rgba(0, 212, 255, 0.2)" stroke-width="2" fill="none"/>
+    <path d="M 850 50 Q 950 80 1050 50" stroke="rgba(168, 85, 247, 0.2)" stroke-width="2" fill="none"/>
+  </g>
+  
+</svg>
