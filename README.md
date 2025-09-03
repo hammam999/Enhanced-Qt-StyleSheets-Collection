@@ -761,7 +761,7 @@ Original QSS collection creator
 
 **🎉 Thank you for using Enhanced Qt StyleSheets! 🎉**
 
-[![GitHub](https://img.shields.io/badge/GitHub-GTRONICK/QSS-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/GTRONICK/QSS)
+[![GitHub](https://img.shields.io/badge/GitHub-GTRONICK/QSS-181717?style=for-the-badge&logo=github&logoColor=white)]([https://github.com/GTRONICK/QSS](https://github.com/hammam999/Enhanced-Qt-StyleSheets-Collection))
 [![Qt](https://img.shields.io/badge/Built%20for-Qt%20Framework-41CD52?style=for-the-badge&logo=qt&logoColor=white)](https://www.qt.io/)
 
 </div>
